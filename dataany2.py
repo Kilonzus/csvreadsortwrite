@@ -27,7 +27,4 @@ with open(fin_name, 'rb') as fin:
             if row[1]  != 'City':
                 d[row[1]].append(float(row[3]))
         for k,v in d.iteritems():
-            Counter(value for values in d.itervalues() for value in values)
-            c = Counter(k)
-            print c
             print "There are {} points of data for {}, ".format([len(v)], k), "{}'s Average is {}".format(k,sum(v)/len(v))
